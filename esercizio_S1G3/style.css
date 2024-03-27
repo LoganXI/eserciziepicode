@@ -1,50 +1,5 @@
-div {font-family:"Papirus", "Open Sans", sans-serif;}
+/*------------------header----------------*/
 
-#container {
-    width: 1024px;
-
-    margin: 0 auto;
-    /*
-    1valore: -> su tutti e quattro i lati
-    2valori: -> 1ò sopra/sotto 2ò dx/sx
-    3valori: -> 1ò sopra 2ò dx/sx 3ò sotto
-    4valori: -> top right bottom left
-    */
-}
-
-footer {
-    width: 1024px;
-
-    margin: 0 auto;
-}
-
-a {
-    color: #107777;
-    ;
-}
-
-header {
-
-    text-align: center;
-    /* left, right, center */
-    text-indent: 2em;
-    /* rientro della prima linea */
-
-}
-
-#logo {
-    height: 15%;
-    width: 15%;
-}
-
-.presentation {
-    float: top;
-    padding-right: 10px;
-    width: fit-content;
-}
-li{
-    margin-bottom: 5px;
-}
 .subtitle {
 
     border-top: 1px solid #FFD877;
@@ -56,28 +11,19 @@ li{
     margin-top: 2%;
 }
 
-.feat {
-    color: red;
-    margin-bottom: 0px;
-}
-
-#feat {
-
-    padding-left: 2%;
-    border-left: 1px solid #FFD877;
-}
-
 .subtitle strong {
-    font-style: bold;
     font-weight: 1000;
 }
+#logo {
+    height: 15%;
+    width: 15%;
+}
 
-.sectitle {
-    font-weight: 900;
-    font-style: bold;
-    font-size: larger;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #C4F3F2;
+#container, footer {
+    width: 1024px;
+
+    margin: 0 auto;
+    
 }
 
 h1 {
@@ -88,10 +34,21 @@ h1 {
     
 }
 
-.listitle {
-    font-style: bold;
-    font-weight: bolder;
+header {
+    text-align: center;   
+    text-indent: 2em;   
+}
 
+div {font-family:"Papirus", "Open Sans", sans-serif;}
+
+/*------------------article----------------*/
+a {
+    color: #107777;
+    ;
+}
+
+li{
+    margin-bottom: 5px;
 }
 
 .topsec {
@@ -108,15 +65,48 @@ h1 {
     height: 768px;
 }
 
+.sectitle {
+    font-weight: 900;
+    font-style: bold;
+    font-size: larger;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #C4F3F2;
+}
+
+.listitle {
+    font-style: bold;
+    font-weight: bolder;
+
+}
+
+.presentation {
+    float: top;
+    padding-right: 10px;
+    width: fit-content;
+}
+
+.feat {
+    color: red;
+    margin-bottom: 0px;
+}
+
 .underimage {
     color: #999999;
 }
+
 .metlist :first-child{
     font-style: bold;
     font-weight: bolder;
     margin-bottom: 15px;
 }
+
 .metlist :last-child{
     list-style-type: none;
     
+}
+
+#feat {
+
+    padding-left: 2%;
+    border-left: 1px solid #FFD877;
 }
