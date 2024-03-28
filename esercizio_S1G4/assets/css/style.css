@@ -4,7 +4,7 @@ body{
     background-image: url(../img/sfondo.png);
 }
 /* HEADER  */
-header, footer{
+header{
     text-align: center;
     color: white;
     font-style: bold;
@@ -38,6 +38,13 @@ header a{
 /* ELEMENTI NEL MAIN - ARTICLE */
 h1{
     font-size: 4ch;
+    font-weight: 600;
+}
+h3{
+    font-size: 2ch;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px;
     font-weight: 600;
 }
 .author{
@@ -108,6 +115,46 @@ code{
 a{
     color: #0099CC;
 }
+
+form, #articoli div{
+    background-color: #ddd;
+    border:2px solid #b4b4b4;
+    margin-top: 30px;
+
+}
+.datadx{
+    text-align: right;
+}
+#footlink{
+    color: #AA2072;
+}
+
+#email{
+    width:60%;
+    height: 30px;
+    margin: 30px;
+    margin-right: 5px ;
+    border: none;
+    border-bottom: 1px dotted black;
+}
+#buttn{
+    height: 30px;
+    margin: 30px;
+    margin-right: 5px ;
+    border: none;
+    background-color: #3366CC;
+}
+#articoli p{
+    margin-left: 30px;
+    margin-top: 5px;
+    
+}
+#articoli a{
+    margin-left: 30px;
+    margin-top: 30px;
+    font-weight: 600;
+}
+
 /* TABELLE */
 table{
     align-items: center;
@@ -130,17 +177,8 @@ td{
 li{
     margin: 30px;
 }
-form, #articoli div{
-    background-color: #ddd;
-    border:2px solid #b4b4b4;
-    margin-top: 30px;
-}
-.datadx{
-    text-align: right;
-}
-#footlink{
-    color: #AA2072;
-}
+
+
 tr:nth-child(even) {background-color: #EEEEEE; border:1px solid #DDDDDE;} 
 tr:nth-child(odd) {background-color: #fff;}
 /* FORM */
@@ -148,3 +186,14 @@ tr:nth-child(odd) {background-color: #fff;}
 /* ELEMENTI NELL' ASIDE */
 
 /* FOOTER */
+footer{
+    text-align: center;
+    color: white;
+    font-style: bold;
+    font-weight: 600;
+    font-size: 3ch;
+    padding: 30px;    
+    background-image: linear-gradient(#0099CC,#007788);
+    margin-top: 30px;
+    box-shadow: 0px 5px 3px rgba(190, 190, 190, 0.5)
+}
