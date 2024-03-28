@@ -1,0 +1,150 @@
+/* IMPOSTAZIONI GENERALI */
+div {font-family:"Poppins";}
+body{
+    background-image: url(../img/sfondo.png);
+}
+/* HEADER  */
+header, footer{
+    text-align: center;
+    color: white;
+    font-style: bold;
+    font-weight: 600;
+    font-size: 3ch;
+    padding: 30px;    
+    background-image: linear-gradient(#0099CC,#007788);
+    margin: 30px;
+    box-shadow: 0px 5px 3px rgba(190, 190, 190, 0.5)
+}
+header p{
+    margin: 30px;  
+      
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+#logo{
+    max-width: 70%;
+    
+  height: auto;
+}
+
+/* MAIN */
+#main{
+    padding: 30px;    
+    background-color: white;
+    margin: 30px;
+}
+/* ELEMENTI NEL MAIN - ARTICLE */
+h1{
+    font-size: 4ch;
+    font-weight: 600;
+}
+.author{
+    color: #ddd;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 2.5ch;
+}
+section, table{
+    font-size: 2.5ch;
+}
+section ul , section ol{
+    padding-left: 50px;   
+}
+section ul{
+    list-style-type: disc;
+}
+section ol{
+    list-style-type: decimal;
+}
+
+section p, section li, table{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 40px;  
+    height: auto;
+}
+b{
+    color: #AA2072;
+    font-weight: 600;
+}
+
+code{
+    background-color: #ddd;
+    background-size: cover;
+    border:1px solid #535353; 
+    border-radius: 10px
+}
+
+#test{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 40px;  
+    height: auto;
+    font-size: 2.5ch;
+}
+
+
+.convid {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  }
+  
+  /* Then style the iframe to fit in the container div with full height and width */
+  .respovid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px
+  }
+
+a{
+    color: #0099CC;
+}
+/* TABELLE */
+table{
+    align-items: center;
+    border-bottom: 2px solid #3673B2   ;
+}
+caption{
+    font-size: 2ch;
+    font-style: italic;
+    font-weight: 600;
+}
+th{
+    background-color: #3673B2;
+    margin: auto;
+    text-align: center;
+}
+td{
+    margin: 4%;
+    text-align: center;
+}
+li{
+    margin: 30px;
+}
+form, #articoli div{
+    background-color: #ddd;
+    border:2px solid #b4b4b4;
+    margin-top: 30px;
+}
+.datadx{
+    text-align: right;
+}
+#footlink{
+    color: #AA2072;
+}
+tr:nth-child(even) {background-color: #EEEEEE; border:1px solid #DDDDDE;} 
+tr:nth-child(odd) {background-color: #fff;}
+/* FORM */
+
+/* ELEMENTI NELL' ASIDE */
+
+/* FOOTER */

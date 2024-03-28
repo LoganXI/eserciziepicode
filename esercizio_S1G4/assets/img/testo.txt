@@ -1,0 +1,62 @@
+
+EPICODE
+School
+EPICODE-IL BLOG DEI DEVELOPERS
+⇒ HOME <
+⇒ ARTICOLI
+⇒ LAVORA CON NOI <
+Come creare un template per i post
+di Mario Rossi - pubblicato il 25-
+10-2020
+La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le parti comuni da applicare a tutte le pagine
+Le varie aree saranno quindi suddivise in:
+• Contenuti di intestazione del tag <header>
+• Contenuti centrali variabili del
+tag <main> (corpo principale) • Contenuti di fine pagina comuni, da inserire nel tag <footer>
+Formattazione del codice
+Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare con i CSS. Perciò i passi saranno:
+1. Progettare su carta il markup finale, assegnando ad ogni specifico testo il tag appropriato 2. Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso
+3. Applicare gli stili CSS
+L'applicazione di stili CSS è cresciuta
+negli anni fino a raggiungere la
+diffusione pressoché totale.
+Diffusione dei CSS
+% di
+Anno
+utilizzo
+Supporto
+browsers
+2000
+20%
+17%
+2002
+35%
+22%
+2004
+45%
+42%
+2008
+80%
+51%
+2012
+100%
+76%
+Un test di validazione potrà essere
+fatto tramite il tool online dedicato allo scopo. Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come loro:
+Chilsono web d.. i :
+FACCIO IL DEVELOPER
+NOVITÀ
+Vuoi rimanere aggiornato su altre
+novità del blog? Iscriviti alla
+nostra newsletter:
+inserisci l'email
+Iscriviti!
+ARTICOLI CORRELATI
+Validare il codice HTML Categoria: develop
+Data: 18-9-2020
+Correggere la sintassi Categoria: develop
+Data: 16-9-2020
+Meno Kb nella pagina Categoria: ottimizzazione
+Data: 30-9-2020
+Blog Epicode @2021
+Testata online di Mario Rossi, registrata con prot. n.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA 00112233. info@epicode.school
