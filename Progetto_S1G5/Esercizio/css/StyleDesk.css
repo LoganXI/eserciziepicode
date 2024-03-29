@@ -1,0 +1,213 @@
+/* IMPOSTAZIONI GENERALI */
+body {
+    font-family: "Open Sans", 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.65;
+    text-align: center;
+    color: #393d41;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #25a2c3;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+    font-weight: 700;
+    margin: 40px;
+    margin-bottom: 0px;
+}
+
+h1 {
+    font-size: 2.3rem;
+    line-height: 1;
+}
+
+/* HEADER */
+.logo {
+    text-align: left;
+    background-color: black;
+}
+
+header img {
+    text-align: center;
+    overflow: hidden;
+    width: 10%;
+    margin: 30px;
+}
+
+.testata {
+
+    text-align: center;
+    background-image: url(../images/banner.jpg);
+    background-size: 150%;
+    background-position-x: center;
+    overflow: hidden;
+    width: 100%;
+
+}
+
+.testata p {
+    margin: 20px;
+    margin-bottom: 0px;
+}
+
+.testo {
+    margin: 30ch;
+
+}
+
+.bottone {
+    margin-top: 3ch;
+    margin-bottom: 3ch;
+}
+
+input {
+    height: 5ch;
+    width: 15ch;
+    background-color: #f04c2f;
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+    font-style: bold;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif
+}
+
+/* MAIN */
+p {
+    margin-top: 10px;
+}
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+.liste{
+    text-align: left;
+    margin-top: 10%;
+}
+
+.liste h2{
+    margin-top: 4ch;    
+}
+.notebook {
+    
+    width: 50%;
+    border-radius: 50%;
+    float: left;
+    padding-right: 5%;
+    padding-left: 5%;
+    
+}
+
+.rosso{
+    margin-top: 35%;
+}
+.rosso,
+.rosso h1,
+.rosso h4 {
+    color: white;
+    background-color: #e22d0e;
+
+}
+
+.rosso h1 {
+    margin-top: 30px;
+    padding-top: 3ch;
+}
+
+.rosso :nth-child(2) {
+    font-style: italic;
+}
+
+.rosso :nth-child(3) {
+    margin-top: 3ch;
+    font-style: bolder;
+    font-size: 2ch;
+}
+
+.rosso :last-child {
+    font-size: 1.5ch;
+    padding-bottom: 5ch;
+    margin: 0px;
+}
+
+/* ELEMENTI NELL' ASIDE */
+
+
+.row{
+    height:20%;
+    width: 100%;
+   
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.inimg{
+    height: 100%;
+    width: 30%;
+    margin: 1%;
+    overflow: hidden;
+    display: block;
+    float: left;
+    border: 1px solid #dee1e3;
+    border-radius: 5px;
+}
+
+aside{
+    object-fit: contain;
+    margin-top: 5%;
+    
+}
+
+aside img,
+main img {
+    overflow: hidden;
+    width: 100%;
+}
+
+
+aside p{
+    margin-bottom: 3ch;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 7ch;
+    background-color: #25a2c3;
+    color: #c8e7f0;
+
+}
+
+.piede {
+    display: inline-block;
+    text-align: left;
+}
+
+footer a {
+    color: #c8e7f0;
+}
+
+footer h1 {
+    font-size: 3ch;
+    padding-top: 2ch;
+    padding-bottom: 1ch;
+    color: white;
+    margin-left: 0px;
+}
+
+footer p {
+    margin-top: 0px;
+}
+
+.right {
+    text-align: center;
+    border-top: 1px solid #c8e7f0;
+    padding-top: 3ch;
+    padding-bottom: 6ch;
+    font-size: 1.5ch;
+}

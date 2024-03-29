@@ -1,0 +1,172 @@
+/* IMPOSTAZIONI GENERALI */
+
+/*********
+NOTE: 
+
+PRINCIPALMENTE HO USATO COME SIMULATORE UN IPHONE 14 PRO MAX E UN IPHONE 12 PRO
+IN TEORIA DOVREBBE FUNZIONARE PERO ANCHE SU ALTRI SIMULATORI.
+
+
+*********/
+
+
+
+
+
+
+body {
+    font-family: "Open Sans", 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.65;
+    text-align: center;
+    color: #393d41;  
+}
+p{
+    border: 10px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #25a2c3;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+    font-weight: 700;
+    margin: 40px;
+    margin-bottom: 0px;
+}
+h1{
+    font-size: 2.3rem;
+    line-height: 1;
+}
+
+/* HEADER */
+.logo {
+    background-color: black;
+}
+
+header img {
+    overflow: hidden;
+    width: 40%;
+    margin: 30px;
+}
+
+.testata {
+    background-image: url(../images/banner.jpg);
+    background-size:150%;
+    background-position-x: center;
+    overflow: hidden;
+    width: 100%;
+    
+}
+
+.testata p{
+    margin: 20px;
+    margin-bottom: 0px;
+}
+
+.bottone {
+    margin-top: 3ch;
+    margin-bottom: 3ch;
+}
+
+input{
+    height:5ch;
+    width: 15ch;
+    background-color: #f04c2f;
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+    font-style: bold;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif
+    
+}
+
+/* MAIN */
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+article p, h6{
+    margin-left: 3ch;
+    margin-right: 3ch;
+    margin-top: 10px;
+    
+}
+
+.notebook{
+    margin-top: 2ch;
+    width: 70%;
+    border-radius: 50%;
+}
+.rosso, .rosso h1, .rosso h4{
+    color:white;
+    background-color: #e22d0e ;
+    
+}
+.rosso h1{
+    font-size: 2.5ch;
+    margin-top: 30px;
+    padding-top: 3ch;
+    margin-bottom: 2ch;
+}
+.rosso :nth-child(2){
+    font-style: italic;
+    font-size: 1.5ch;
+}
+.rosso :nth-child(3){
+    margin-top: 3ch;
+    font-style: bolder;
+    font-size: 2ch;
+}
+
+.rosso :last-child{
+    font-size:1.5ch;
+    padding-bottom: 5ch;
+    margin: 0px;
+}
+
+/* ELEMENTI NELL' ASIDE */
+aside div{
+    margin: 2ch;
+    margin-top: 7ch;
+    border:1px solid #dee1e3;
+    border-radius: 5px;
+}
+aside p{
+    margin: 1ch;
+    margin-bottom: 3ch;
+}
+aside img,
+main img {
+    overflow: hidden;
+    width: 100%;
+}
+
+/* FOOTER */
+footer{
+    margin-top: 6ch;
+    background-color: #25a2c3;
+    color:  #c8e7f0;
+}
+footer a{
+    color:  #c8e7f0;
+}
+footer h1{
+    font-size: 3ch;
+    padding-top: 2ch;
+    padding-bottom: 1ch;
+    color: white;   
+}
+footer p{
+    margin-top: 0px;
+}
+.right{
+    margin-left: 9ch;
+    margin-right: 9ch;
+    border-top: 1px solid #c8e7f0;
+    padding-top: 3ch;
+    padding-bottom: 6ch;
+    font-size: 1.5ch;
+}
