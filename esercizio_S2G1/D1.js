@@ -14,8 +14,8 @@ REGOLE
 var x = "I principali datatype in javascript sono 5 e sono numeri, stringhe, booleani, null, undefined; il primo lo dice il nome, ovvero numeri, tutti i numeri compresi i negativi e i decimali, quelli con la virgola.";
 x+="\n Il secondo tipo sono le stringhe ovvero tutto quello che è testo, una frase per esempio, ma attenzione che anche i numeri possono essere scritti come testo, quindi bisogna distinguerli tra valori aritmetici e valori testuali.";
 x+="\n il terzo tipo viene utilizzato per determinare se una affermazione fatta dal nostro codice è vera o falsa, percio rispondera solo vero o falso, per esempio 3x3 = 9 mi rispondera vero oppure 3x3 = 10 risponderà falso";
-x+="\n Il quarto tipo è il tipo null, indica che il contenuto della variabile non ha valore, non significa che vale 0. semplicemente non contiene nulla, e un contenitore vuoto.";
-x+="\n Il quinto tipo specifica che la variabile in questione contiene un valore che non esiste, quindi non è come null che il contenitore è vuoto, il contenitore è pieno ma di un valore che non esiste. ";
+x+="\n Il quarto tipo è il tipo null, indica che il contenuto della variabile ha un valore nullo, non significa che vale 0. il contenitore non e vuoto ma è nullo";
+x+="\n Il quinto tipo specifica che la variabile in questione contiene un valore che non esiste, quindi non è come null che il contenitore è pieno, il contenitore è vuoto con nulla al suo interno. ";
 console.log(x);
 /* ESERCIZIO 2
  Crea una variable chiamata "myName" e assegna ad essa il tuo nome, sotto forma di stringa.
