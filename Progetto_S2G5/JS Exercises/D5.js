@@ -20,14 +20,27 @@ pets.forEach((pet) => {
 */
 var petsOrdinati = pets.slice(0).sort();
 console.log("alfabetico " + petsOrdinati);
-console.log(pets);
+console.log("normale " + pets);
 /* ESERCIZIO 3
     Scrivi del codice per stampare nuovamente in console gli elementi dell'array "pets", questa volta in ordine invertito.
 */
 
-for (let i = pets.length; i = 0; i--) {
+for (let i = pets.length -1 ; i >= 0; i--) {
   console.log(pets[i]);
 }
+
+/* se si preferisce un metodo piu in linea con il programma ho una seconda versione*/
+
+const reversedPets = [];
+
+const copyOfPets = pets.slice();
+
+while (copyOfPets.length > 0) {
+    reversedPets.push(copyOfPets.pop());
+}
+
+console.log(pets); 
+console.log(reversedPets); 
 
 /* ESERCIZIO 4
     Scrivi del codice per spostare il primo elemento dall'array "pets" in ultima posizione.

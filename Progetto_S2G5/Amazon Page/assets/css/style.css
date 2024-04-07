@@ -4,7 +4,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-a{
+a {
     margin-left: 1ch;
     color: #1B5F74;
     font-size: 1.3rem;
@@ -45,7 +45,8 @@ nav li {
     text-align: left;
     color: white;
 }
-nav li:first-child{
+
+nav li:first-child {
     margin-left: 4ch;
 }
 
@@ -120,18 +121,18 @@ main {
 }
 
 
-.core{
+.core {
     margin-top: 3ch;
     margin-bottom: 1ch;
     height: 600px;
 }
 
 #section2 {
-    
+
     background-color: white;
 }
 
-.bait{ 
+.bait {
     margin-left: 1.4%;
     font-size: 1.5rem;
     line-height: 1;
@@ -142,8 +143,11 @@ main {
     padding-top: 1.5ch;
     height: 600px;
     text-align: left;
+
 }
 
+/* per quanto abbia insistito senza usare le flexbox purtroppo la quarta immagine se ridimensiono la pagina piu piccola di 1920*1080 va a capo, 
+nonostante abbia usato tutte misure percentuali e siano dentro un contenitore le altre 3 si ridimensionano perfettamente mentre la quarta deve per forza andare a capo*/
 #card1 {
     background-image: url(../images/img_1.jpg);
 }
@@ -161,6 +165,7 @@ main {
 }
 
 .card {
+    text-align: center;
     width: 22%;
     height: 85%;
     margin: 1.4%;
@@ -173,47 +178,45 @@ main {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-#img9{
+#img9 {
     background-image: url(../images/img_9.png);
 }
-#img10{
+
+#img10 {
     background-image: url(../images/img_10.png);
 }
 
-
-#section4 p{
+#section4 p {
     padding-bottom: 3ch;
 }
 
-#section4{
+#section4 {
     margin-top: 4ch;
 }
-
-
-
-
+/*Footer*/
 footer {
     position: relative;
     height: 300px;
     text-align: center;
     color: white;
     text-decoration: white;
-   
+
 }
 
-footer img{
+footer img {
     max-width: 10%;
 }
-.piede{
+
+.piede {
     height: 70px;
 }
-.separatore{
-    height: 35%;
+
+.separatore {
+    height: 32%;
 }
- footer a {
+
+footer a {
     color: white;
-    text-decoration:underline;
+    text-decoration: underline;
     margin: 1ch;
- }
- 
- 
+}
