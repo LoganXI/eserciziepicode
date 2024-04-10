@@ -21,7 +21,7 @@ const taskAdd = function () {
     let inputField = document.querySelector('#newToDo input')
     let toDos = document.querySelector('#toDoS')
     let newToDo = `<div class="toDo">
-          <span id="taskname">
+          <span>
               ${inputField.value}
           </span>        
           <button class="cancella">
