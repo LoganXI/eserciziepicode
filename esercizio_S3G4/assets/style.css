@@ -1,0 +1,59 @@
+body{
+    background-image: linear-gradient(rgb(44, 129, 70), rgb(35, 74, 100));
+    color: white;
+}
+
+main {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .board 
+  {
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    
+  }
+  .bingo 
+  {
+    width: 60%;
+  }
+  .playerscheda
+  {
+    width: 20%;
+    margin-bottom: 30px;
+  }
+  .numcel 
+  {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(36, 192, 75);
+  }
+ 
+  .btn 
+  {
+    width: 10%;
+    margin-top: 20px;
+    padding: 5px;
+    background-color: rgb(137, 8, 141);
+    border: none;
+  }
+  .playernum 
+  {
+    width: 10%;
+    margin-top: 20px;
+  }
+  
+  .accesa {
+    background-color: #20b6a2;
+  }
+  
