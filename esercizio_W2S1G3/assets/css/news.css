@@ -1,0 +1,41 @@
+  /* Basic styling */
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden; /* Clearfix */
+  }
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .image {
+    flex: 1;
+    order: 1; /* Image is on the right by default */
+  }
+  .text {
+    flex: 1;
+    order: 2; /* Text is on the left by default */
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Media query for tablet and smaller */
+  @media screen and (max-width: 768px) {
+    .content {
+      flex-direction: column;
+    }
+    .text {
+      order: 1; /* Text is on top for smaller screens */
+    }
+  }
+
+
+
+
+
+
+    

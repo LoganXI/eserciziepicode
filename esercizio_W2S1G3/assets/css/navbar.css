@@ -1,0 +1,80 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  nav {
+    background: orangered;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50px;
+  }
+
+  nav ul {
+    
+    list-style: none;
+    margin: 0 0 20px; /* non va bene in modalità "desktop" */
+    padding: 0;
+    
+    color: white;
+    align-items: center;
+    
+  }
+
+
+  nav form {
+    text-align: center;
+  }
+
+  nav form button {
+    background-color: white;
+    border: 1px solid red;
+    width: 3em;
+    border-radius: 50px;
+    color: orangered;
+  }
+  nav li{
+    display: flex;
+    width: 20%;
+    height: 40px;
+    background-color: aqua;
+    border-radius: 20px;
+    justify-content: space-around;
+    align-items: center;
+
+    
+  }
+  nav img{
+    margin-left: 10%;
+    width: 20%;
+    max-width: 800px;
+  }
+  nav li:nth-child(3){
+    
+    width: 40%;
+    height: 80px;
+border-radius: 40px;
+  }
+
+  @media screen and (min-width: 577px) {
+    /* proprietà per la versione "desktop" */
+    nav {
+      flex-direction: row;
+    }
+
+    nav form {
+      margin-right: 1em; /* spazia leggermente il form dal bordo destro */
+    }
+
+    nav ul {
+      margin: 0 0 0 0.5em; /* azzera il margine inferiore e imposta 0.5em a sx */
+      display: flex;
+    }
+
+    nav ul li {
+      margin-right: 0.5em; /* 8px */
+    }
+  }
