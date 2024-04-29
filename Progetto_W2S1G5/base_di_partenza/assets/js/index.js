@@ -31,7 +31,7 @@ window.onload = function () {
 }
 
 function fadeM() {
-    const ems = document.querySelectorAll('[stroke-miterlimit="4"][opacity="1"] g [opacity="1"][style="display: block;"]')
+    const ems = document.querySelectorAll('[stroke-miterlimit="4"][opacity="1"] [style="display: block;"]')
     console.log(ems);
     const emsl = ems.length;
     const randnum = [];

@@ -229,9 +229,11 @@ header button {
 
 }
 
+
 .card img {
     width: 25px;
     border-radius: 10px;
+    margin-right: 10px;
 }
 
 .card span {
