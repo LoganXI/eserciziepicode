@@ -25,12 +25,27 @@ header {
     position: fixed;
     width: 100vw;
     display: flex;
-    background: #ffc017;
+    
     border-bottom: 1px solid #242424;
     justify-content: center;
     z-index: 10;
 }
-
+.testata{
+    background: #ffc017;
+    transition: all 0.3s ease-in 0s ; 
+}
+.testata button{
+    transition: all 0.3s ease-in 0s ;
+}
+.change{
+    background-color: white;
+    transition: all 0.3s ease-in 0s ;
+}
+.change button{
+    background-color: #1a8917;
+    transition: all 0.3s ease-in 0s ;
+    border:1px solid #1a8917;
+}
 .heade {
     padding-bottom: 0;
     display: flex;
@@ -47,7 +62,7 @@ header {
 
 
 nav {
-    background: #ffc017;
+    
     padding: 1em 0;
     display: flex;
     justify-content: center;
@@ -114,6 +129,7 @@ header button {
     padding-top: 168px;
     padding-bottom: 132px;
     border-bottom: 1px solid #191919;
+    overflow: auto;
 }
 
 .hero h1 {
@@ -145,12 +161,12 @@ header button {
     width: 213px;
 }
 
-.hero img {
+
+.imgsvg{
     position: absolute;
     top: 80px;
     right: 0;
     z-index: 1;
-
 }
 
 .trend {
