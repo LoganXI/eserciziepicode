@@ -1,0 +1,49 @@
+// qui dentro è dove applicherò le mie personalizzazioni su bootstrap
+
+// dove partiamo? per prima cosa è necessario IMPORTARE in questo nostro file scss i SORGENTI di bootstrap
+// una volta fatto questo, potrò cambiarne i colori, le spaziature, i breakpoints etc.
+// infine ricompileremo il "minestrone" in modo da ottenere un custom-bootstrap.css come lo vogliamo noi!
+
+// proviamo a cambiare i COLORI di default di bootstrap
+
+@import 'scss/functions'; // l'import di functions è necessario per l'import successivo, "variables"
+@import 'scss/variables'; // qui dentro sono definiti i colori originali
+
+// ora creo i nuovi colori
+$new-primary: #1fdf64;
+$new-secondary: #000;
+$new-info: #808080;
+
+// ora inseriamo questi colori nelle mappe colore di bootstrap -> "$theme-colors"
+
+// creo la mia nuova mappa colori
+$new-theme-colors: (
+  'primary': $new-primary,
+  'secondary': $new-secondary,
+  'info': $new-info,
+  'salvatore': rgb(48, 48, 247),
+);
+
+// ora, passo finale: andiamo a fare una FUSIONE ("merge") della nostra mappa colori personalizzata
+// con la mappa colori "$theme-colors" di bootstrap
+
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
+
+// creo la mia nuova mappa degli spacers
+$new-spacers: (
+  0: 0,
+  1: $spacer * 0.1,
+  2: $spacer * 0.25,
+  3: $spacer * 0.4,
+  4: $spacer * 0.6,
+  5: $spacer * 2,
+  6: $spacer * 3,
+  7: $spacer * 4,
+);
+
+$spacers: map-merge($spacers, $new-spacers);
+
+// abbiamo sovrascritto 3 colori originali e aggiunto uno nuovo :)
+// al momento i partials importati non dichiarano nessuna classe di bootstrap (sono solo variabili e funzioni)
+// importiamo bootstrap.scss che si occuperà di portare nel compilato tutte le normali classi di bootstrap
+@import 'scss/bootstrap.scss';

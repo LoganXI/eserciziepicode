@@ -1,0 +1,50 @@
+@import 'scss/functions';
+@import 'scss/variables';
+
+
+
+
+
+
+
+
+$new-primary: #141414;
+$new-secondary: rgb(234,222,112);
+$new-info: #808080;
+
+// ora inseriamo questi colori nelle mappe colore di bootstrap -> "$theme-colors"
+
+// creo la mia nuova mappa colori
+$new-theme-colors: (
+  'primary': $new-primary,
+  'secondary': $new-secondary,
+  'info': $new-info,
+);
+
+// ora, passo finale: andiamo a fare una FUSIONE ("merge") della nostra mappa colori personalizzata
+// con la mappa colori "$theme-colors" di bootstrap
+
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
+
+
+
+@import 'scss/bootstrap.scss';
+@import 'scss/card';
+@import 'scss/mixins';
+
+.card{
+    margin: 0;
+    padding: 0;
+    width: calc(100%/6);
+    
+}
+img{
+    padding: 0;
+}
+section{
+    margin: 0;
+}
+
+body{
+    overflow: hidden;
+}
