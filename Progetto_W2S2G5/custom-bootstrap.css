@@ -12453,6 +12453,10 @@ textarea.form-control-lg {
   color: #000;
 }
 
+.header {
+  max-height: 310px;
+}
+
 .card {
   margin: 0;
   padding: 0;
@@ -12460,6 +12464,11 @@ textarea.form-control-lg {
   border: 0;
   overflow: visible;
   transition: all 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.15);
+  z-index: 1;
 }
 
 .smaller {
@@ -12477,11 +12486,6 @@ img {
 
 section {
   margin: 0;
-}
-
-footer {
-  height: 300px;
-  line-height: 2em;
 }
 
 .btn {
@@ -12503,10 +12507,6 @@ a {
   padding: 0;
 }
 
-.header {
-  max-height: 310px;
-}
-
 @media screen and (min-width: 600px) {
   .header {
     max-width: 310px;
@@ -12522,7 +12522,12 @@ a {
   text-decoration: none;
 }
 
-.card:hover {
-  transform: scale(1.15);
-  z-index: 1;
+footer {
+  height: 300px;
+  line-height: 2em;
+}
+
+.dropdown-menu > li > a:hover {
+  background-image: none;
+  background-color: red;
 }/*# sourceMappingURL=custom-bootstrap.css.map */

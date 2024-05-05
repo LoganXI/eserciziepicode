@@ -2,20 +2,11 @@
 @import 'scss/variables';
 
 
-
-
-
-
-
-
 $new-primary: #141414;
 $new-secondary: #FFFFFF;
 $new-info: #808080;
 
 
-// ora inseriamo questi colori nelle mappe colore di bootstrap -> "$theme-colors"
-
-// creo la mia nuova mappa colori
 $new-theme-colors: (
     'primary': $new-primary,
     'secondary': $new-secondary,
@@ -23,8 +14,7 @@ $new-theme-colors: (
     'greyz': #e0e0e0,
 );
 
-// ora, passo finale: andiamo a fare una FUSIONE ("merge") della nostra mappa colori personalizzata
-// con la mappa colori "$theme-colors" di bootstrap
+
 
 $theme-colors: map-merge($theme-colors, $new-theme-colors);
 
@@ -35,14 +25,21 @@ $input-placeholder-color: white;
 @import 'scss/card';
 @import 'scss/mixins';
 @import 'scss/carousel';
+
+.header{
+    max-height: 310px;
+}
 .card {
     margin: 0;
     padding: 0;
-    // width: calc(100%/6);
     border-radius: 0;
     border: 0;
     overflow: visible;
     transition: all 0.3s;
+}
+.card:hover{
+    transform: scale(1.15);
+    z-index: 1;
 }
 .smaller{
     font-size: 0.8em;
@@ -60,10 +57,7 @@ section {
     margin: 0;
 }
 
-footer {
-    height: 300px;
-    line-height: 2em;
-}
+
 
 .btn {
     border-radius: 0;
@@ -84,9 +78,7 @@ a{
     padding: 0;
 }
 
-.header{
-    max-height: 310px;
-}
+
 
 @media screen and (min-width: 600px) {
     .header{
@@ -106,7 +98,12 @@ a{
 
 }
 
-.card:hover{
-    transform: scale(1.15);
-    z-index: 1;
+footer {
+    height: 300px;
+    line-height: 2em;
+}
+
+.dropdown-menu > li > a:hover {
+    background-image: none;
+    background-color: red;
 }
