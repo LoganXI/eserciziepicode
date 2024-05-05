@@ -9,16 +9,18 @@
 
 
 $new-primary: #141414;
-$new-secondary: rgb(234,222,112);
+$new-secondary: #FFFFFF;
 $new-info: #808080;
+
 
 // ora inseriamo questi colori nelle mappe colore di bootstrap -> "$theme-colors"
 
 // creo la mia nuova mappa colori
 $new-theme-colors: (
-  'primary': $new-primary,
-  'secondary': $new-secondary,
-  'info': $new-info,
+    'primary': $new-primary,
+    'secondary': $new-secondary,
+    'info': $new-info,
+    'greyz': #e0e0e0,
 );
 
 // ora, passo finale: andiamo a fare una FUSIONE ("merge") della nostra mappa colori personalizzata
@@ -26,25 +28,85 @@ $new-theme-colors: (
 
 $theme-colors: map-merge($theme-colors, $new-theme-colors);
 
+$input-placeholder-color: white;
 
 
 @import 'scss/bootstrap.scss';
 @import 'scss/card';
 @import 'scss/mixins';
-
-.card{
+@import 'scss/carousel';
+.card {
     margin: 0;
     padding: 0;
-    width: calc(100%/6);
-    
+    // width: calc(100%/6);
+    border-radius: 0;
+    border: 0;
+    overflow: visible;
+    transition: all 0.3s;
 }
-img{
+.smaller{
+    font-size: 0.8em;
+}
+#profed{
+font-size: 4em;
+font-weight: 400;
+}
+
+img {
     padding: 0;
 }
-section{
+
+section {
     margin: 0;
 }
 
-body{
-    overflow: hidden;
+footer {
+    height: 300px;
+    line-height: 2em;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 40px; 
+    height: 100%; 
+    font-size: 1rem;
+}
+
+div{
+    padding: 0;
+}
+a{
+    padding: 0;
+}
+
+.header{
+    max-height: 310px;
+}
+
+@media screen and (min-width: 600px) {
+    .header{
+
+        max-width: 310px;
+    }
+    .headerhome{
+        max-width: 600px;
+        max-height: 310px;
+    }
+}
+
+.asett{
+    font-weight: bold;
+    color: #417FD2;
+    text-decoration: none;
+
+}
+
+.card:hover{
+    transform: scale(1.15);
+    z-index: 1;
 }
