@@ -12,8 +12,8 @@ const generateList = function (books) {
                             <img src="${book.img}" class="card-img-top" alt="${book.title}">
                             <div class="card-body">
                             <h5 class="card-title">${book.title}</h5>
-                            <p class="card-text">Prezzo:${book.price}\$</p>
-                            <a href="#" class="btn btn-primary onclick="deleteCard(event)">Delete</a>
+                            <p class="card-text">Prezzo:${book.price}\$<i class="bi bi-cart-plus "></i></p>
+                            <button class="btn btn-primary onclick="deleteCard(event)">Delete</button>
                             </div>
                            </div>`
         // il <li> è pronto!
