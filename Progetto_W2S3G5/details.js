@@ -24,7 +24,7 @@ const appendAlert = (message, type) => {
 }
 
 
-const getEventData = function () {
+const getGundamData = function () {
   fetch(`https://striveschool-api.herokuapp.com/api/product/${gundamId}`, {
     headers: {
       Authorization: API_KEY,
@@ -34,6 +34,10 @@ const getEventData = function () {
     // una chiamata GET fatta così NON CI TORNA TUTTI GLI EVENTI, ma UNO nello specifico!
     .then((response) => {
       if (response.ok) {
+        const spin = document.getElementById('spinner')
+        spin.classList.add('visually-hidden')
+        const card = document.getElementById('carta')
+        card.classList.remove('visually-hidden')
         return response.json()
       } else {
         if (response.status === 404) {
@@ -62,4 +66,4 @@ const getEventData = function () {
     })
 }
 
-getEventData()
+getGundamData()

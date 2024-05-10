@@ -54,8 +54,11 @@ const getEvents = function () {
   })
     .then((response) => {
       if (response.ok) {
+        const spin = document.getElementById('spinner')
+        spin.classList.add('visually-hidden')
         console.log(response)
         return response.json()
+
       } else {
         if (response.status === 404) {
           throw new Error('Errore nella risposta del server: Resource not found ' + response.status)

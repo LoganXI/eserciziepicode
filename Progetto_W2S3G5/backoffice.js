@@ -37,7 +37,7 @@ console.log('EVENTID?', gundamId)
 
 let eventToModify
 
-const getEventData = function () {
+const getGundamData = function () {
 
   fetch(`https://striveschool-api.herokuapp.com/api/product/${gundamId}`, {
     headers: {
@@ -79,7 +79,7 @@ const getEventData = function () {
 
 if (gundamId) {
 
-  getEventData()
+  getGundamData()
 
   document.getElementById('creat').innerText = 'MODIFICA!'
   document.getElementById('delet').innerText = 'CANCELLA'

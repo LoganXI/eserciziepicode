@@ -66,7 +66,10 @@
     <div id="liveAlertPlaceholder"></div>
     <main class="flex-grow-1">
       <h2 class="text-center mt-2">EpiTickets - Dettagli</h2>
-      <div class="container">
+      <div class="spinner-border" role="status" id="spinner">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="container visually-hidden" id="carta">
         <div class="row mt-4 justify-content-center">
           <div class="col-12 col-lg-6">
             <div class="card">
