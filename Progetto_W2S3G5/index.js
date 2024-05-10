@@ -1,13 +1,12 @@
-// riempie lo span "year"
+
 const API_KEY = 'bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjNkZDZiZjgxODQ0MjAwMTUzNzU4ODMiLCJpYXQiOjE3MTUzMjg3MDMsImV4cCI6MTcxNjUzODMwM30.wbIQmhpdC4mmD30MOeD4fJGYCF6NF5cz4Cdi3-QhFEo'
 document.getElementById('year').innerText = new Date().getFullYear()
 
 
 function redirectToPage(url) {
-  window.location.href = url; // Redirect to the specified URL
+  window.location.href = url; 
 }
-// riempiamo la riga con gli eventi
-// https://striveschool-api.herokuapp.com/api/agenda
+
 
 const generateGundamCards = function (gundamsArray) {
   const row = document.getElementById('events-row')
@@ -46,7 +45,7 @@ const appendAlert = (message, type) => {
 }
   
 const getEvents = function () {
-  //  recuperiamo la lista di eventi attualmente nel database
+
   fetch('https://striveschool-api.herokuapp.com/api/product/', {
     headers: {
       Authorization: API_KEY,
@@ -72,7 +71,7 @@ const getEvents = function () {
     })
     .then((array) => {
       console.log('ARRAY!', array)
-      // creiamo le card per la landing page
+
       generateGundamCards(array)
     })
     .catch((err) => {
