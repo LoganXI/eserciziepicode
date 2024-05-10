@@ -82,7 +82,7 @@ if (gundamId) {
   getGundamData()
 
   document.getElementById('creat').innerText = 'MODIFICA!'
-  document.getElementById('delet').innerText = 'CANCELLA'
+  document.getElementById('delet').innerText = 'ELIMINA'
 }
 
 
