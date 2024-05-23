@@ -10,7 +10,8 @@ import { PostsService } from '../../posts.service';
 export class HomeComponent {
 
   postsArr:iPost[] = []
-
+  firstPost!:iPost;
+  randomPosts:iPost[] = [];
   constructor(
     private postsSvc:PostsService
   ){}
@@ -19,6 +20,12 @@ export class HomeComponent {
 
     this.postsArr = this.postsSvc.getAll()
 
+    let firstPost = this.postsSvc.getFirstPost()
+
+      if(firstPost){
+        this.firstPost = firstPost
+      }
+    this.randomPosts = this.postsSvc.getRandomPosts()
   }
 
 }
