@@ -7,7 +7,7 @@ import { iPost } from './Models/ipost';
 })
 export class PostsService {
 
-  postArr:iPost[] = [];
+
 
   constructor() {
     this.getPosts().then(()=>{
@@ -20,20 +20,26 @@ export class PostsService {
 
       this.randomPosts = this.getRandomPosts()
 
+      this.allActives = this.getActive();
+      this.allInactives = this.getInactive();
+
+
+
     })
   }
 
   postsArr:iPost[] = [];
   firstPost!:iPost;
   randomPosts:iPost[] = [];
-
+  allActives:iPost[] = [];
+  allInactives:iPost[] = [];
 
 
   async getPosts(){
-      const response = await fetch('../../../assets/db.json')
-      const posts = <iJsonContent> await response.json()
+    const response = await fetch('../../../assets/db.json')
+    const posts = <iJsonContent> await response.json()
 
-      this.postsArr = posts.posts;
+    this.postsArr = posts.posts;
   }
 
   getFirstPost(){
@@ -48,4 +54,23 @@ export class PostsService {
     const shuffled = [...this.postsArr].sort(() => 0.5 - Math.random());
     return shuffled.slice(0, 4);
   }
+  getActive(): iPost[] {
+    const attivi = this.postsArr.filter(p => p.active == true);
+    console.log(attivi);
+    return attivi;
+  }
+
+  getInactive(): iPost[] {
+    const nonattivi = this.postsArr.filter(p => p.active == false);
+    console.log(nonattivi);
+    return nonattivi;
+  }
+
+  getAllActive(): iPost[] {
+    return this.allActives;
+  }
+  getAllInactive(): iPost[] {
+    return this.allInactives;
+  }
+
 }

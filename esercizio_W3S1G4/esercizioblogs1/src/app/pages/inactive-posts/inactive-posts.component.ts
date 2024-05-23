@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { iPost } from '../../Models/ipost';
+import { PostsService } from '../../posts.service';
 
 @Component({
   selector: 'app-inactive-posts',
@@ -7,4 +9,14 @@ import { Component } from '@angular/core';
 })
 export class InactivePostsComponent {
 
+  inactivePostsArr:iPost[] = []
+  constructor(
+    private postsSvc:PostsService
+  ){}
+
+  ngOnInit(){
+
+    this.inactivePostsArr = this.postsSvc.getAllInactive();
+
+  }
 }

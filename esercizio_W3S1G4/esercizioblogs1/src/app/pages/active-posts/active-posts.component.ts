@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { iPost } from '../../Models/ipost';
 import { iJsonContent } from '../../Models/i-json-content';
+import { PostsService } from '../../posts.service';
 
 @Component({
   selector: 'app-active-posts',
@@ -9,38 +10,15 @@ import { iJsonContent } from '../../Models/i-json-content';
 })
 export class ActivePostsComponent {
 
-  postsArr:iPost[] = [];
-  firstPost!:iPost;
-  randomPosts:iPost[] = [];
+  activePostsArr:iPost[] = []
+  constructor(
+    private postsSvc:PostsService
+  ){}
 
   ngOnInit(){
 
-    this.getPosts().then(()=>{
+    this.activePostsArr = this.postsSvc.getAllActive();
 
-      let firstPost = this.getFirstPost()
-
-      if(firstPost){
-        this.firstPost = firstPost
-      }
-
-      this.randomPosts = this.getRandomPosts()
-
-    })
   }
 
-  async getPosts(){
-      const response = await fetch('../../../assets/db.json')
-      const posts = <iJsonContent> await response.json()
-
-      this.postsArr = posts.posts;
-  }
-
-  getFirstPost(){
-    return this.postsArr.shift()
-  }
-
-  getRandomPosts(): iPost[] {
-    const shuffled = [...this.postsArr].sort(() => 0.5 - Math.random());
-    return shuffled.slice(0, 4);
-  }
 }
