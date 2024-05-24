@@ -20,8 +20,8 @@ export class PostsService {
 
       this.randomPosts = this.getRandomPosts()
 
-      this.allActives = this.getActive();
-      this.allInactives = this.getInactive();
+      this.allActives = this.getAllActive();
+      this.allInactives = this.getAllInactive();
 
 
 
@@ -54,23 +54,17 @@ export class PostsService {
     const shuffled = [...this.postsArr].sort(() => 0.5 - Math.random());
     return shuffled.slice(0, 4);
   }
-  getActive(): iPost[] {
-    const attivi = this.postsArr.filter(p => p.active == true);
+  getAllActive(): iPost[] {
+    const attivi = this.postsArr.filter(p => p.active);
     console.log(attivi);
     return attivi;
   }
 
-  getInactive(): iPost[] {
-    const nonattivi = this.postsArr.filter(p => p.active == false);
+  getAllInactive(): iPost[] {
+    const nonattivi = this.postsArr.filter(p => !p.active);
     console.log(nonattivi);
     return nonattivi;
   }
 
-  getAllActive(): iPost[] {
-    return this.allActives;
-  }
-  getAllInactive(): iPost[] {
-    return this.allInactives;
-  }
 
 }
