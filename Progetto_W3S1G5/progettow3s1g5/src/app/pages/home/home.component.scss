@@ -15,7 +15,13 @@
   transform: scale(1.05); /* Slight zoom on hover */
 }
 
-
+.loghi {
+  background: linear-gradient(to bottom, #0000FF, #000000, #FF0000); /* Gradient background */
+  /* Fallback for older browsers */
+  background: -webkit-linear-gradient(to bottom, #0000FF, #000000, #FF0000);
+  border-radius: 10px; /* Rounded corners */
+  padding: 5px; /* Add some padding */
+}
 
 .battle-img {
   height: 50vh; /* Set a fixed height for the images */

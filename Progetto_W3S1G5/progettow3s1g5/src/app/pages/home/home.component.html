@@ -1,17 +1,20 @@
-<h2>Vota il tuo Gundam Preferito!!</h2>
-<div class="row" *ngIf="randGun.length > 0">
-  <div class="col-12 col-md-6 col-lg-3" *ngFor="let p of brands">
-    <a [routerLink]="['/faction', p.brand]">
-    <div class="card loghi">
-      <div class="card-body text-center">
-          <img
-            src="{{ p.brandLogo }}"
-            alt="logo"
-            class="img-fluid brand-logo"
-          />
+
+<div class="container text-center my-5">
+  <h2>Vota il tuo Gundam Preferito!!</h2>
+  <div class="row mt-3" *ngIf="randGun.length > 0">
+    <div class="col-12 col-md-6 col-lg-4" *ngFor="let p of brands">
+      <a [routerLink]="['/faction', p.brand]">
+        <div class="card loghi">
+          <div class="card-body text-center">
+            <img
+              src="{{ p.brandLogo }}"
+              alt="logo"
+              class="img-fluid brand-logo"
+            />
+          </div>
         </div>
-      </div>
-    </a>
+      </a>
+    </div>
   </div>
 </div>
 
