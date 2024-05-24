@@ -1,6 +1,6 @@
 [
     {
-        "brand": "Fiat",
+        "brand": "Seed",
         "brandLogo": "https://picsum.photos/100/100?random=7",
         "model": "500L",
         "modelImage": "https://picsum.photos/200/300?random=1",
@@ -9,7 +9,7 @@
         "available": false
     },
     {
-        "brand": "Fiat",
+        "brand": "Seed",
         "brandLogo": "https://picsum.photos/100/100?random=7",
         "model": "500 Abarth",
         "modelImage": "https://picsum.photos/200/300?random=2",
@@ -18,7 +18,7 @@
         "available": true
     },
     {
-        "brand": "Ford",
+        "brand": "Unicorn",
         "brandLogo": "https://picsum.photos/100/100?random=8",
         "model": "Taurus",
         "modelImage": "https://picsum.photos/200/300?random=3",
@@ -27,7 +27,7 @@
         "available": false
     },
     {
-        "brand": "Ford",
+        "brand": "Unicorn",
         "brandLogo": "https://picsum.photos/100/100?random=8",
         "model": "Focus",
         "modelImage": "https://picsum.photos/200/300?random=4",
@@ -36,7 +36,7 @@
         "available": true
     },
     {
-        "brand": "Audi",
+        "brand": "Iron",
         "brandLogo": "https://picsum.photos/100/100?random=9",
         "model": "A3",
         "modelImage": "https://picsum.photos/200/300?random=5",
@@ -45,7 +45,7 @@
         "available": true
     },
     {
-        "brand": "Audi",
+        "brand": "Iron",
         "brandLogo": "https://picsum.photos/100/100?random=9",
         "model": "Q7",
         "modelImage": "https://picsum.photos/200/300?random=6",
