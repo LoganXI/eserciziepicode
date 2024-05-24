@@ -1,0 +1,28 @@
+
+.battle-img {
+  height: 50vh; /* Set a fixed height for the images */
+  object-fit: cover; /* Ensures the image covers the given dimensions */
+  object-position: top;
+}
+
+.battle {
+  max-width: 100%; /* Ensures the card takes up the full width of its container */
+  position: relative; /* Necessary for the overlay positioning */
+}
+
+.battle-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better text readability */
+  color: white; /* Text color for better readability */
+}
+
+.faction {
+  max-width: 100%; /* Ensure the container does not exceed its parent's width */
+  height: 200px; /* Set a fixed height for the container */
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+.faction img {
+  width: 100%; /* Ensure the image takes up the full width of its container */
+  height: 100%; /* Ensure the image takes up the full height of its container */
+  object-fit: cover; /* Ensures the image covers the container */
+}

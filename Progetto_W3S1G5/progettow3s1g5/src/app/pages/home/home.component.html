@@ -1,52 +1,54 @@
 <h2>Vota il tuo Gundam Preferito!!</h2>
 <div class="row" *ngIf="randGun.length > 0">
-  <div class="col-12 col-md-6 col-lg-3" style="max-width: 300px" *ngFor="let p of brands"  >
-    <div class="image-fluid">
-      <img src="{{ p.brandLogo }}" alt="logo" />
-    </div>
+  <div class="col-12 col-md-6 col-lg-3" *ngFor="let p of brands">
+    <a [routerLink]="['/faction', p.brand]">
+    <div class="card loghi">
+      <div class="card-body text-center">
+          <img
+            src="{{ p.brandLogo }}"
+            alt="logo"
+            class="img-fluid brand-logo"
+          />
+        </div>
+      </div>
+    </a>
   </div>
 </div>
+
 <div class="row">
   <div class="col-12 col-md-6" *ngFor="let p of randGun">
     <div
-      class="card mb-3"
-      style="max-width: 900px"
+      class="card mb-3 text-bg-dark battle"
       [ngClass]="{
         'bg-success': p.available,
         'bg-danger': !p.available
       }"
+      style="max-width: 100%"
     >
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img
-            src="{{ p.modelImage }}"
-            class="img-fluid rounded-start"
-            alt="logo"
-          />
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">{{ p.brand }}</h5>
-            <p class="card-text">{{ p.model }}</p>
-            <a class="btn btn-primary" [routerLink]="['/faction', p.brand]">{{
-              p.brand
-            }}</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card text-bg-dark " style="max-width: 900px">
       <img
         src="{{ p.modelImage }}"
-        class="img-fluid rounded-start"
-        alt="logo"
+        class="card-img img-fluid battle-img"
+        alt="{{ p.model }}"
+        style="height: 50vh; object-fit: cover"
       />
-      <div class="card-img-overlay">
+      <div
+        class="card-img-overlay d-flex flex-column justify-content-end battle-overlay"
+        [ngClass]="{
+          'text-success': p.available,
+          'text-danger': !p.available
+        }"
+      >
         <h5 class="card-title">{{ p.brand }}</h5>
         <p class="card-text">{{ p.model }}</p>
-        <a class="btn btn-primary" [routerLink]="['/faction', p.brand]">{{
-          p.brand
-        }}</a>
+        <a
+          class="btn"
+          [ngClass]="{
+            'btn-success': p.available,
+            'btn-danger': !p.available
+          }"
+          [routerLink]="['/faction', p.brand]"
+          >Gundam {{ p.brand }}</a
+        >
       </div>
     </div>
   </div>

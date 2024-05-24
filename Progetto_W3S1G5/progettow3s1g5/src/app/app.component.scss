@@ -1,0 +1,13 @@
+body {
+  /* Gradient background */
+  background: linear-gradient(to bottom, #1e3c72, #2a5298, #2c3e50);
+  /* Fallback for older browsers */
+  background: -webkit-linear-gradient(to bottom, #1e3c72, #2a5298, #2c3e50);
+  /* Add a bit of silver/grey to the middle */
+  background: linear-gradient(to bottom, #1e3c72, #2a5298, #bdc3c7, #2c3e50);
+  /* Fallback for older browsers */
+  background: -webkit-linear-gradient(to bottom, #1e3c72, #2a5298, #bdc3c7, #2c3e50);
+  /* Height to cover the entire viewport */
+  height: 100vh;
+}
+
