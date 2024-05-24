@@ -6,24 +6,20 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-faction',
   templateUrl: './faction.component.html',
-  styleUrl: './faction.component.scss'
+  styleUrl: './faction.component.scss',
 })
 export class FactionComponent {
   faction: iGundam[] = [];
+  logo: string = '';
   constructor(
     private gundamsSvc: GundamsService,
-    private route:ActivatedRoute
-  ){}
+    private route: ActivatedRoute
+  ) {}
 
-  ngOnInit(){
-    this.route.params.subscribe((params:any) => {
-
-    this.faction= this.gundamsSvc.getGundamFaction(params.id)
-
-    })
+  ngOnInit() {
+    this.route.params.subscribe((params: any) => {
+      this.faction = this.gundamsSvc.getGundamFaction(params.id);
+      this.logo = this.faction[0].brandLogo;
+    });
   }
-
-
-
-
 }

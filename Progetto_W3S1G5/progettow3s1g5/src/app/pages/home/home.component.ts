@@ -10,10 +10,17 @@ import { Component } from '@angular/core';
 export class HomeComponent {
   randGun: iGundam[] = [];
   brands: iGundam[] = [];
-  constructor(private gundamsSvc: GundamsService) {}
+  constructor(private gundamsSvc: GundamsService) {
+  }
 
   ngOnInit() {
-    this.randGun = this.gundamsSvc.getRandomGunds();
-    this.brands = this.gundamsSvc.getAllLogos();
+
+    //richiamo la fetch qui perche senno all'apertura della home page non mi venivano caricate le info
+    this.gundamsSvc.getGundams().then(() => {
+      this.randGun = this.gundamsSvc.getRandomGunds();
+      this.brands = this.gundamsSvc.getAllLogos();
+
+      return this.randGun, this.brands;
+    });
   }
 }

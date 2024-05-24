@@ -1,54 +1,54 @@
 [
     {
         "brand": "Seed",
-        "brandLogo": "https://picsum.photos/100/100?random=7",
-        "model": "500L",
-        "modelImage": "https://picsum.photos/200/300?random=1",
+        "brandLogo": "https://www.pikpng.com/pngl/m/432-4323028_mobile-suit-gundam-seed-gundam-seed-logo-clipart.png",
+        "model": "ZGMF-X20A Strike Freedom Gundam",
+        "modelImage": "https://c.wallhere.com/photos/08/0a/anime_mechs_Gundam_Super_Robot_Wars_Mobile_Suit_Gundam_SEED_Destiny_Strike_Freedom_Gundam_artwork_digital_art-2100487.jpg!s1",
         "year": 2015,
         "price": 7500,
         "available": false
     },
     {
         "brand": "Seed",
-        "brandLogo": "https://picsum.photos/100/100?random=7",
-        "model": "500 Abarth",
-        "modelImage": "https://picsum.photos/200/300?random=2",
+        "brandLogo": "https://www.pikpng.com/pngl/m/432-4323028_mobile-suit-gundam-seed-gundam-seed-logo-clipart.png",
+        "model": "GAT-X105 Aile Strike Gundam",
+        "modelImage": "https://cdn.donmai.us/original/7e/d1/7ed13f12f98e1c99ac5fb4e86823365f.jpg",
         "year": 2010,
         "price": 3500,
         "available": true
     },
     {
         "brand": "Unicorn",
-        "brandLogo": "https://picsum.photos/100/100?random=8",
-        "model": "Taurus",
-        "modelImage": "https://picsum.photos/200/300?random=3",
+        "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Mobile_Suit_Gundam_Unicorn.svg/1200px-Mobile_Suit_Gundam_Unicorn.svg.png",
+        "model": "RX-0 Unicorn Gundam",
+        "modelImage": "https://i.etsystatic.com/24730897/r/il/278a4c/2474199368/il_570xN.2474199368_46ot.jpg",
         "year": 2009,
         "price": 5200,
         "available": false
     },
     {
         "brand": "Unicorn",
-        "brandLogo": "https://picsum.photos/100/100?random=8",
-        "model": "Focus",
-        "modelImage": "https://picsum.photos/200/300?random=4",
+        "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Mobile_Suit_Gundam_Unicorn.svg/1200px-Mobile_Suit_Gundam_Unicorn.svg.png",
+        "model": "Sinanju",
+        "modelImage": "https://s1.zerochan.net/MSN-06S.Sinanju.600.4074019.jpg",
         "year": 2014,
         "price": 9700,
         "available": true
     },
     {
         "brand": "Iron",
-        "brandLogo": "https://picsum.photos/100/100?random=9",
-        "model": "A3",
-        "modelImage": "https://picsum.photos/200/300?random=5",
+        "brandLogo": "https://www.gundamitalianclub.net/wp-content/uploads/2021/06/logo-IBO.png",
+        "model": "AWS-G-08 Gundam Barbatos",
+        "modelImage": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/06/Collage-Maker-20-Jun-2022-0553-PM-(1).jpg",
         "year": 2012,
         "price": 4300,
         "available": true
     },
     {
         "brand": "Iron",
-        "brandLogo": "https://picsum.photos/100/100?random=9",
-        "model": "Q7",
-        "modelImage": "https://picsum.photos/200/300?random=6",
+        "brandLogo": "https://www.gundamitalianclub.net/wp-content/uploads/2021/06/logo-IBO.png",
+        "model": "ASW-G-66 Gundam Kimaris Vidar",
+        "modelImage": "https://static.zerochan.net/ASW-G-66.Gundam.Kimaris.Vidar.full.3049516.jpg",
         "year": 2020,
         "price": 41700,
         "available": false

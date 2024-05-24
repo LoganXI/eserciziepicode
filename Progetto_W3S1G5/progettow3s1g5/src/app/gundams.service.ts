@@ -9,10 +9,8 @@ export class GundamsService {
   gundArr:iGundam[]=[];
 
   constructor() {
-    this.getGundams().then(() => {
-      this.getRandomGunds()
-    });
-
+    this.getGundams()
+console.log("fetch finita")
 
   }
 
