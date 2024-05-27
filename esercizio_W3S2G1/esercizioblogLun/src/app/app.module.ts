@@ -10,6 +10,7 @@ import { InactivePostsComponent } from './components/pages/inactive-posts/inacti
 import { ActivePostsComponent } from './components/pages/active-posts/active-posts.component';
 import { PostDetailComponent } from './components/post-detail/post-detail.component';
 import { SinglePageComponent } from './components/pages/single-page/single-page.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -54,7 +55,11 @@ const routes: Route[] = [
     PostDetailComponent,
     SinglePageComponent,
   ],
-  imports: [BrowserModule, RouterModule.forRoot(routes)],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    RouterModule.forRoot(routes),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

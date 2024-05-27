@@ -17,4 +17,11 @@ export class SinglePageComponent {
     this.posts = this.blogSvc.getAllPosts();
 
   }
+
+  modificaPost(): void {
+
+
+  }
+
+
 }
