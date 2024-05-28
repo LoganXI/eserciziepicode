@@ -12,7 +12,7 @@ import { InactivePostComponent } from './pages/inactive-post/inactive-post.compo
 import { PostDetailsComponent } from './pages/post-details/post-details.component';
 import { FormsModule } from '@angular/forms';
 import { SinglePostComponent } from './pages/single-post/single-post.component';
-import { Route } from '@angular/router';
+import { Route, RouterModule } from '@angular/router';
 
 
 const routes: Route[] = [
@@ -63,6 +63,7 @@ const routes: Route[] = [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    RouterModule.forRoot(routes),
   ],
   providers: [],
   bootstrap: [AppComponent]

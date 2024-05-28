@@ -16,26 +16,36 @@ export class SinglePostComponent {
     private postsSvc:PostsService
   ){}
 
-  ngOnInit() {
-      this.getTopPost();
+
+  ngOnInit(): void {
+    this.posts = this.postsSvc.getAllPosts();
+    this.related = this.postsSvc.getAllPosts();
+    this.posts = this.ordinaPost();
   }
 
-  async getTopPost() {
+  ordinaPost(): iPosts[]{
+    const selectedTags = new Set<string>();
+  const uniquePosts: iPosts[] = [];
 
-      this.posts = this.postsSvc.getAllPosts();
-      const indice = Math.floor(Math.random() * this.posts.length);
-      this.post = this.posts[indice];
-      this.getRelated(4);
+  for (const post of this.posts) {
+    const postHasNewTag = post.tags.some(tag => !selectedTags.has(tag));
+
+    if (postHasNewTag) {
+      uniquePosts.push(post);
+      post.tags.forEach(tag => selectedTags.add(tag));
+    }
   }
 
-  getRelated(num: number) {
-      const presenti: number[] = []
-      for (let i = 0; i < num; i++) {
-          const indice = Math.floor(Math.random() * this.posts.length);
-          if (presenti.includes(indice)) this.getRelated(num - i);
-          presenti.push(indice);
-          this.related.push(this.posts[indice]);
-      }
-      console.log(this.related);
+  return uniquePosts;
   }
+  selezionaTag(t:string):void{
+    this.posts = this.related.filter(post => post.tags.includes(t));
+  }
+
+
+  modificaPost(): void {
+
+
+  }
+
 }
