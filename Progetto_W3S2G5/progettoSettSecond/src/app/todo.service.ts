@@ -947,7 +947,7 @@ export class TodoService {
 
     console.log(autore);
     this.todoAuthor.map((p) => {
-      this.todoFiltered = this.todoAuthor.filter((u) => u.author?.toLowerCase() == autore.toLocaleLowerCase());
+      this.todoFiltered = this.todoAuthor.filter((u) => u.author?.toLowerCase().includes( autore.toLocaleLowerCase()));
 
 
       return p;
