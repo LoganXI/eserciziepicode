@@ -9,6 +9,7 @@ import { iUser } from './models/i-users';
 export class TodoService {
   todoAuthor: iTodo[] = [];
   usersPosts: iUser[] = [];
+  todoFiltered: iTodo[] = [];
   todoList: iTodo[] = [
     {
       id: 1,
@@ -939,6 +940,17 @@ export class TodoService {
       u.todos = allTodos;
 
       return u;
+    });
+  }
+
+  getFilteredPosts(autore:string){
+    const users: iUser[] = this.userSvc.getAll();
+    console.log(autore);
+    this.todoFiltered = this.todoList.map((p) => {
+      let author = users.find((u) => u.id === p.userId && u.firstName == autore);
+      p.author = `${author?.firstName} ${author?.lastName}`;
+
+      return p;
     });
   }
 }

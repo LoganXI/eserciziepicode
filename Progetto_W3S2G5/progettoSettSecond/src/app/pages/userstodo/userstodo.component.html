@@ -1,16 +1,25 @@
 <div class="container">
   <div class="row">
-    <div class="col-6" *ngFor="let u of users">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">{{ u.author }}</h5>
+    <div class="col-12" *ngFor="let u of users">
+      <div class="container">
+        <div class="row">
           <div class="container">
-            <div class="row">
-              <div class="col-6" *ngFor="let t of users.todo">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">{{ t.todo }}</h5>
+            <h5>{{ u.firstName }}</h5>
+            <div *ngFor="let p of u.todos">
+              <div
+                class="card col-3"
+                [ngClass]="{
+            'text-decoration-underline': !p.completed,
+            'text-decoration-line-through': p.completed,
+          }"
+              >
+                <div class="card-body">
+                  <div class="col-6">
+                    <input type="checkbox" [(ngModel)]="p.completed" />
+                    <h5 class="card-title">{{ p.todo }}</h5>
                   </div>
+
+                  <p class="card-text">{{ p.author }}</p>
                 </div>
               </div>
             </div>

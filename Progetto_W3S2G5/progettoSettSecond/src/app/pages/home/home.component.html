@@ -1,14 +1,36 @@
-<div class="container">
+<!-- <div class="container">
   <div class="row">
-    <div class="col-6" *ngFor="let p of todos">
-      <div class="card">
+    <div class="col-6" *ngFor="let p of todos" >
+      <div class="card"[ngClass]="{
+        'text-decoration-underline': !p.completed,
+        'text-decoration-line-through': p.completed,
+      }">
         <div class="card-body">
           <h5 class="card-title">{{p.todo}}</h5>
 
           <p class="card-text">{{p.author}}</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <input type="checkbox" [(ngModel)]="p.completed">
         </div>
 
     </div>
   </div>
-</div>
+</div> -->
+
+<body>
+  <div>
+    <input type="text" [(ngModel)]="searchterm" (ngModelChange)="filterData(searchterm)" placeholder="Search...">
+  </div>
+  <ul class="tilesWrap"  *ngFor="let p of todos, let i = index"  >
+    <li [ngClass]="{
+      'text-decoration-underline': !p.completed,
+      'text-decoration-line-through': p.completed,
+  }">
+		<h2>{{i+1}}</h2>
+		<h3>{{p.todo}}</h3>
+		<p>
+      {{p.author}}
+
+		</p>
+		<input type="checkbox" [(ngModel)]="p.completed">
+	</li>
+

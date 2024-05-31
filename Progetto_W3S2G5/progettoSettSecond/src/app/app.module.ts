@@ -5,6 +5,10 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CompletedComponent } from './pages/completed/completed.component';
 import { HomeComponent } from './pages/home/home.component';
+import { FormsModule } from '@angular/forms';
+import { NavbarComponent } from './comp/navbar/navbar.component';
+import { HeaderComponent } from './comp/header/header.component';
+import { UserstodoComponent } from './pages/userstodo/userstodo.component';
 
 
 
@@ -12,11 +16,15 @@ import { HomeComponent } from './pages/home/home.component';
   declarations: [
     AppComponent,
     CompletedComponent,
-    HomeComponent
+    HomeComponent,
+    NavbarComponent,
+    HeaderComponent,
+    UserstodoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

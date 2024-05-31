@@ -1,1 +1,14 @@
-<p>completed works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-6" *ngFor="let p of todos" >
+      <div class="card"[ngClass]="{
+        'd-none': !p.completed,
+      }" >
+        <div class="card-body">
+          <h5 class="card-title">{{p.todo}}</h5>
+          <p class="card-text">{{p.author}}</p>
+        </div>
+
+    </div>
+  </div>
+</div>
