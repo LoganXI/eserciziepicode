@@ -944,11 +944,11 @@ export class TodoService {
   }
 
   getFilteredPosts(autore:string){
-    const users: iUser[] = this.userSvc.getAll();
+
     console.log(autore);
-    this.todoFiltered = this.todoList.map((p) => {
-      let author = users.find((u) => u.id === p.userId && u.firstName == autore);
-      p.author = `${author?.firstName} ${author?.lastName}`;
+    this.todoAuthor.map((p) => {
+      this.todoFiltered = this.todoAuthor.filter((u) => u.author?.toLowerCase() == autore.toLocaleLowerCase());
+
 
       return p;
     });
