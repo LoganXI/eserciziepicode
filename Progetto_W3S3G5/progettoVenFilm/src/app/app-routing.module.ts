@@ -1,3 +1,4 @@
+import { FilmsComponent } from './pages/films/films.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { SigninGuard } from './pages/signin/signin.guard';
@@ -26,7 +27,12 @@ const routes: Routes = [
     path: "users",
     component: AllUsersComponent,
     canActivate: [ProfilePageGuard],
-  }
+  },
+  {
+    path: "films",
+    component: FilmsComponent,
+    canActivate: [ProfilePageGuard],
+  },
   // {
   //   path: "**",
   //   redirectTo: "login"

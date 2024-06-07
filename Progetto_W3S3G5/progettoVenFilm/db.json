@@ -25,5 +25,11 @@
       "cognome": "grande",
       "id": 4
     }
+  ],
+  "movies":[
+
+  ],
+  "favourites":[
+
   ]
 }
