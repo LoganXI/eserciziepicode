@@ -1,0 +1,29 @@
+<div class="row row-cols-3">
+  <div class="col"></div>
+  <div class="col-12">
+    <div class="card mt-5 text-center">
+      <div class="card-body">
+        <h5 class="card-title">{{ user.nome }} {{ user.cognome }}</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col"></div>
+</div>
+
+<H3>Film Preferiti</H3>
+<div class="row">
+  <div class="col col-3 my-5" *ngFor="let f of favourite">
+    <div class="card stil h-100">
+      <img [src]="[f.movie.image]" class="card-img-top img-stil" />
+      <div class="card-body">
+        <h5 class="card-title">{{ f.movie.title }}</h5>
+
+        <p class="card-text">
+          {{ f.movie.plot }}
+        </p>
+        <p>{{ f.movie.year }}</p>
+        <p>{{ f.movie.director }}</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container">
+    <button
+      (click)="collapse.toggle()"
+      [attr.aria-expanded]="!isCollapsed"
+      aria-controls="collapseExample"
+      class="navbar-toggler"
+      type="button"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="collapse navbar-collapse"
+      #collapse="ngbCollapse"
+      [(ngbCollapse)]="isCollapsed"
+    >
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item" *ngIf="!isLoggedIn">
+          <a class="nav-link" routerLink="/">Login</a>
+        </li>
+        <li class="nav-item" *ngIf="isLoggedIn">
+          <a class="nav-link" routerLink="/movies">Tutti i Film</a>
+        </li>
+        <li class="nav-item" *ngIf="isLoggedIn">
+          <a class="nav-link" routerLink="/utente">Pagina Personale</a>
+        </li>
+        <li class="nav-item" *ngIf="isLoggedIn">
+          <a class="nav-link" routerLink="/users">Tutti gli utenti</a>
+        </li>
+        <li class="nav-item" *ngIf="isLoggedIn">
+          <button (click)="logout()" class="nav-link">Logout</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

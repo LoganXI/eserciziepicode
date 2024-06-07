@@ -1,42 +1,31 @@
-import { FilmsComponent } from './pages/films/films.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SigninGuard } from './pages/signin/signin.guard';
-import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
-import { ProfilePageGuard } from './pages/profile-page/profile-page.guard';
-import { AllUsersComponent } from './pages/all-users/all-users.component';
+import { GuestGuard } from './pages/auth/guest.guard';
+import { AuthGuard } from './pages/auth/auth.guard';
 
 const routes: Routes = [
-  {
-    path: "login",
-    // component: SigninComponent,
-    loadChildren: () => import("./pages/signin/signin.module").then(m => m.SigninModule)
-    , canActivate: [SigninGuard]
-  },
-  {
-    path: "signup",
-    // component: SignupComponent,
-    loadChildren: () => import("./pages/signup/signup.module").then(m => m.SignupModule)
-  },
-  {
-    path: "",
-    component: ProfilePageComponent,
-    canActivate: [ProfilePageGuard],
-  },
-  {
-    path: "users",
-    component: AllUsersComponent,
-    canActivate: [ProfilePageGuard],
-  },
-  {
-    path: "films",
-    component: FilmsComponent,
-    canActivate: [ProfilePageGuard],
-  },
-  // {
-  //   path: "**",
-  //   redirectTo: "login"
-  // }
+  { path: '', loadChildren: () => import('./pages/auth/auth.module').then(m => m.AuthModule),
+    canActivate: [GuestGuard],
+  canActivateChild: [GuestGuard],
+   },
+
+   { path: 'utente', loadChildren: () => import('./pages/utente/utente.module').then(m => m.UtenteModule),
+    canActivate:[AuthGuard],
+  canActivateChild: [AuthGuard]
+   },
+
+
+  { path: 'users', loadChildren: () => import('./pages/users/users.module').then(m => m.UsersModule),
+    canActivate:[AuthGuard],
+  canActivateChild: [AuthGuard]
+   },
+
+{ path: 'movies', loadChildren: () => import('./pages/movies/movies.module').then(m => m.MoviesModule),
+     canActivate:[AuthGuard],
+    canActivateChild: [AuthGuard] }
+
+
+
 ];
 
 

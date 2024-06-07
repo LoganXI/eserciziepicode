@@ -1,35 +1,217 @@
 {
   "users": [
     {
-      "email": "forofuw@mailinator.com",
-      "password": "$2a$10$IQOXZWcGTLARYTSu3aj5V.16qO/s54RgXWVRlSmUUWVlBmMguWQPS",
-      "nome": "Hic iure laboris pla",
+      "email": "logan@gmail.com",
+      "password": "$2a$10$KMaYJVaZIC46N2s6D0V/MeeuxwM4wQi2j1QCcS.hXcpryhMBTwZFy",
+      "nome": "morgan",
+      "cognome": "asd",
       "id": 1
     },
     {
-      "email": "vizig@mailinator.com",
-      "password": "$2a$10$/ZFuof8ZUzWwk2QkziFAROS53IuWkkBpF945Ouji5hoq7pbftL5Q6",
-      "nome": "Quia non et necessit",
+      "email": "logan@gmiail",
+      "password": "$2a$10$PZBIanxewL6am.TxqX.1oOPeG6lEuy9AkbI4JhK8AInrRC5B1pSKu",
+      "nome": "qwert",
+      "cognome": "morgan",
       "id": 2
     },
     {
-      "email": "zufojoruv@mailinator.com",
-      "password": "$2a$10$kJR.w6ueaexoSwXlJWX4p.iFGza4/HW7ywKDDGGE858a7aDWyRFwW",
-      "nome": "Quia id excepturi e",
+      "email": "qwer@qwer",
+      "password": "$2a$10$gQ0A8JmKGXmx0E8vzVOgf.j2qzI7AwAY3JSfzSfiAPYocCDWPKFP.",
+      "nome": "qwert",
+      "cognome": "qwert",
+      "id": 3
+    }
+  ],
+  "movies": [
+    {
+      "title": "Avatar",
+      "year": 2009,
+      "Plot": "A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+      "image": "http://ia.media-imdb.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SX300.jpg",
+      "director": "James Cameron",
+      "id": 1
+    },
+    {
+      "title": "I Am Legend",
+      "year": 2007,
+      "plot": "Years after a plague kills most of humanity and transforms the rest into monsters, the sole survivor in New York City struggles valiantly to find a cure.",
+      "image": "http://ia.media-imdb.com/images/M/MV5BMTU4NzMyNDk1OV5BMl5BanBnXkFtZTcwOTEwMzU1MQ@@._V1_SX300.jpg",
+      "director": "Francis Lawrence",
+      "id": 2
+    },
+    {
+      "title": "300",
+      "year": 2006,
+      "plot": "King Leonidas of Sparta and a force of 300 men fight the Persians at Thermopylae in 480 B.C.",
+      "image": "http://ia.media-imdb.com/images/M/MV5BMjAzNTkzNjcxNl5BMl5BanBnXkFtZTYwNDA4NjE3._V1_SX300.jpg",
+      "director": "Zack Snyder",
       "id": 3
     },
     {
-      "email": "logan@gmail.com",
-      "password": "$2a$10$nZqFkf/qCo8/onwu9wFAseOsISAyxSFLEyqJbuav6Ip9TGldyPoga",
-      "nome": "morgan",
-      "cognome": "grande",
+      "title": "The Avengers",
+      "year": 2012,
+      "plot": "Earth's mightiest heroes must come together and learn to fight as a team if they are to stop the mischievous Loki and his alien army from enslaving humanity.",
+      "image": "http://ia.media-imdb.com/images/M/MV5BMTk2NTI1MTU4N15BMl5BanBnXkFtZTcwODg0OTY0Nw@@._V1_SX300.jpg",
+      "director": "Joss Whedon",
       "id": 4
+    },
+    {
+      "title": "Crocodile Dundee",
+      "year": 1986,
+      "plot": "An American reporter goes to the Australian outback to meet an eccentric crocodile poacher and invites him to New York City.",
+      "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTg0MTU1MTg4NF5BMl5BanBnXkFtZTgwMDgzNzYxMTE@._V1_SX300.jpg",
+      "director": "Peter Faiman",
+      "id": 5
+    },
+    {
+      "id": 37,
+      "title": "The Shining",
+      "year": 1980,
+      "director": "Stanley Kubrick",
+      "plot": "A family heads to an isolated hotel for the winter where an evil and spiritual presence influences the father into violence, while his psychic son sees horrific forebodings from the past and of the future.",
+      "image": "http://ia.media-imdb.com/images/M/MV5BODMxMjE3NTA4Ml5BMl5BanBnXkFtZTgwNDc0NTIxMDE@._V1_SX300.jpg"
+    },
+    {
+      "id": 39,
+      "title": "Les Misérables",
+      "year": 2012,
+      "director": "Tom Hooper",
+      "plot": "In 19th-century France, Jean Valjean, who for decades has been hunted by the ruthless policeman Javert after breaking parole, agrees to care for a factory worker's daughter. The decision changes their lives forever.",
+      "image": "http://ia.media-imdb.com/images/M/MV5BMTQ4NDI3NDg4M15BMl5BanBnXkFtZTcwMjY5OTI1OA@@._V1_SX300.jpg"
+    },
+    {
+      "id": 40,
+      "title": "L.A. Confidential",
+      "year": "1997",
+      "director": "Curtis Hanson",
+      "plot": "As corruption grows in 1950s LA, three policemen - one strait-laced, one brutal, and one sleazy - investigate a series of murders with their own brand of justice.",
+      "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BNWEwNDhhNWUtYWMzNi00ZTNhLWFiZDAtMjBjZmJhMTU0ZTY2XkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SX300.jpg"
+    },
+    {
+      "id": 41,
+      "title": "Moneyball",
+      "year": 2011,
+      "director": "Bennett Miller",
+      "plot": "Oakland A's general manager Billy Beane's successful attempt to assemble a baseball team on a lean budget by employing computer-generated analysis to acquire new players.",
+      "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjAxOTU3Mzc1M15BMl5BanBnXkFtZTcwMzk1ODUzNg@@._V1_SX300.jpg"
+    },
+    {
+      "id": 42,
+      "title": "The Hangover",
+      "year": "2009",
+      "director": "Todd Phillips",
+      "plot": "Three buddies wake up from a bachelor party in Las Vegas, with no memory of the previous night and the bachelor missing. They make their way around the city in order to find their friend before his wedding.",
+      "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTU1MDA1MTYwMF5BMl5BanBnXkFtZTcwMDcxMzA1Mg@@._V1_SX300.jpg"
+    },
+    {
+      "id": 43,
+      "title": "The Great Beauty",
+      "year": "2013",
+      "director": "Paolo Sorrentino",
+      "plot": "Jep Gambardella has seduced his way through the lavish nightlife of Rome for decades, but after his 65th birthday and a shock from the past, Jep looks past the nightclubs and parties to find a timeless landscape of absurd, exquisite beauty.",
+      "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ0ODg1OTQ2Nl5BMl5BanBnXkFtZTgwNTc2MDY1MDE@._V1_SX300.jpg"
+    },
+    {
+      "id": 44,
+      "title": "Gran Torino",
+      "year": "2008",
+      "director": "Clint Eastwood",
+      "plot": "Disgruntled Korean War veteran Walt Kowalski sets out to reform his neighbor, a Hmong teenager who tried to steal Kowalski's prized possession: a 1972 Gran Torino.",
+      "image": "http://ia.media-imdb.com/images/M/MV5BMTQyMTczMTAxMl5BMl5BanBnXkFtZTcwOTc1ODE0Mg@@._V1_SX300.jpg"
+    },
+    {
+      "id": 45,
+      "title": "Mary and Max",
+      "year": "2009",
+      "director": "Adam Elliot",
+      "plot": "A tale of friendship between two unlikely pen pals: Mary, a lonely, eight-year-old girl living in the suburbs of Melbourne, and Max, a forty-four-year old, severely obese man living in New York.",
+      "image": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ1NDIyNTA1Nl5BMl5BanBnXkFtZTcwMjc2Njk3OA@@._V1_SX300.jpg"
     }
   ],
-  "movies":[
-
-  ],
-  "favourites":[
-
+  "favorites": [
+    {
+      "userId": 2,
+      "movie": {
+        "title": "Avatar",
+        "year": 2009,
+        "Plot": "A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+        "image": "http://ia.media-imdb.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SX300.jpg",
+        "director": "James Cameron",
+        "id": 1
+      },
+      "id": 1
+    },
+    {
+      "userId": 2,
+      "movie": {
+        "title": "I Am Legend",
+        "year": 2007,
+        "plot": "Years after a plague kills most of humanity and transforms the rest into monsters, the sole survivor in New York City struggles valiantly to find a cure.",
+        "image": "http://ia.media-imdb.com/images/M/MV5BMTU4NzMyNDk1OV5BMl5BanBnXkFtZTcwOTEwMzU1MQ@@._V1_SX300.jpg",
+        "director": "Francis Lawrence",
+        "id": 2
+      },
+      "id": 2
+    },
+    {
+      "userId": 2,
+      "movie": {
+        "title": "300",
+        "year": 2006,
+        "plot": "King Leonidas of Sparta and a force of 300 men fight the Persians at Thermopylae in 480 B.C.",
+        "image": "http://ia.media-imdb.com/images/M/MV5BMjAzNTkzNjcxNl5BMl5BanBnXkFtZTYwNDA4NjE3._V1_SX300.jpg",
+        "director": "Zack Snyder",
+        "id": 3
+      },
+      "id": 3
+    },
+    {
+      "userId": 2,
+      "movie": {
+        "title": "The Avengers",
+        "year": 2012,
+        "plot": "Earth's mightiest heroes must come together and learn to fight as a team if they are to stop the mischievous Loki and his alien army from enslaving humanity.",
+        "image": "http://ia.media-imdb.com/images/M/MV5BMTk2NTI1MTU4N15BMl5BanBnXkFtZTcwODg0OTY0Nw@@._V1_SX300.jpg",
+        "director": "Joss Whedon",
+        "id": 4
+      },
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "movie": {
+        "title": "Avatar",
+        "year": 2009,
+        "Plot": "A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+        "image": "http://ia.media-imdb.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SX300.jpg",
+        "director": "James Cameron",
+        "id": 1
+      },
+      "id": 5
+    },
+    {
+      "userId": 3,
+      "movie": {
+        "title": "Avatar",
+        "year": 2009,
+        "Plot": "A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+        "image": "http://ia.media-imdb.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SX300.jpg",
+        "director": "James Cameron",
+        "id": 1
+      },
+      "id": 6
+    },
+    {
+      "userId": 3,
+      "movie": {
+        "title": "I Am Legend",
+        "year": 2007,
+        "plot": "Years after a plague kills most of humanity and transforms the rest into monsters, the sole survivor in New York City struggles valiantly to find a cure.",
+        "image": "http://ia.media-imdb.com/images/M/MV5BMTU4NzMyNDk1OV5BMl5BanBnXkFtZTcwOTEwMzU1MQ@@._V1_SX300.jpg",
+        "director": "Francis Lawrence",
+        "id": 2
+      },
+      "id": 7
+    }
   ]
 }

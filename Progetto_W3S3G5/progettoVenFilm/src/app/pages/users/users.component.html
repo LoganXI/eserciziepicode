@@ -1,0 +1,13 @@
+<h1 class="m-3 text-center">Uenti registrati</h1>
+<div class="row m-lg-5">
+  <div class="col d-flex justify-content-center m-4" *ngFor="let v of users">
+    <div class="card" style="width: 15rem">
+      <div class="card-body">
+        <h5 class="card-title">{{ v.nome }} {{ v.cognome }}</h5>
+        <p class="card-text">
+          {{ v.email }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

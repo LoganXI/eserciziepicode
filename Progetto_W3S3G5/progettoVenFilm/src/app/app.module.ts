@@ -3,27 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
-import { HttpClientModule } from '@angular/common/http';
-
-import { AllUsersComponent } from './pages/all-users/all-users.component';
-import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
-import { FilmsComponent } from './pages/films/films.component';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NavComponent } from './main-component/nav/nav.component';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './main-component/footer/footer.component';
+import { AuthInterceptor } from './pages/auth/auth.interceptor';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    AllUsersComponent,
-    ProfilePageComponent,
-    FilmsComponent
+  declarations: [AppComponent, NavComponent, FooterComponent],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, NgbModule],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
   ],
- imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
