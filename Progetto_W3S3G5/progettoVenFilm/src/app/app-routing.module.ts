@@ -4,33 +4,41 @@ import { GuestGuard } from './pages/auth/guest.guard';
 import { AuthGuard } from './pages/auth/auth.guard';
 
 const routes: Routes = [
-  { path: '', loadChildren: () => import('./pages/auth/auth.module').then(m => m.AuthModule),
+  {
+    path: '',
+    loadChildren: () =>
+      import('./pages/auth/auth.module').then((m) => m.AuthModule),
     canActivate: [GuestGuard],
-  canActivateChild: [GuestGuard],
-   },
+    canActivateChild: [GuestGuard],
+  },
 
-   { path: 'utente', loadChildren: () => import('./pages/utente/utente.module').then(m => m.UtenteModule),
-    canActivate:[AuthGuard],
-  canActivateChild: [AuthGuard]
-   },
+  {
+    path: 'utente',
+    loadChildren: () =>
+      import('./pages/utente/utente.module').then((m) => m.UtenteModule),
+    canActivate: [AuthGuard],
+    canActivateChild: [AuthGuard],
+  },
 
+  {
+    path: 'users',
+    loadChildren: () =>
+      import('./pages/users/users.module').then((m) => m.UsersModule),
+    canActivate: [AuthGuard],
+    canActivateChild: [AuthGuard],
+  },
 
-  { path: 'users', loadChildren: () => import('./pages/users/users.module').then(m => m.UsersModule),
-    canActivate:[AuthGuard],
-  canActivateChild: [AuthGuard]
-   },
-
-{ path: 'movies', loadChildren: () => import('./pages/movies/movies.module').then(m => m.MoviesModule),
-     canActivate:[AuthGuard],
-    canActivateChild: [AuthGuard] }
-
-
-
+  {
+    path: 'movies',
+    loadChildren: () =>
+      import('./pages/movies/movies.module').then((m) => m.MoviesModule),
+    canActivate: [AuthGuard],
+    canActivateChild: [AuthGuard],
+  },
 ];
-
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
